@@ -1,13 +1,23 @@
 #include <stdio.h>
+#include "main.h"
 
-int main()
+/**
+ * main - Entry point
+ *
+ * Description: A program that prints _putchar and new line
+ *
+ * Return: returns 0
+ **/
+int main(void)
 {
+	char c[8] = "_putchar";
+	int i = 0;
 
-	// Get the character to be written
-	char ch = '_putchar';
-
-	// Write the Character to stdout
-	putchar(ch);
-
+	while (i < 8)
+	{
+		_putchar(c[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
